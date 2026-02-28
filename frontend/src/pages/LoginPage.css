@@ -1,0 +1,90 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+  color: #e8e8e8;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.user-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #e2e8f0;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.user-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(99, 102, 241, 0.5);
+}
+
+.user-btn.selected {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: #6366f1;
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.user-role.badge {
+  background: rgba(99, 102, 241, 0.3);
+  color: #a5b4fc;
+}
+
+.error-banner {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  color: #fca5a5;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.loading,
+.empty {
+  color: #94a3b8;
+  text-align: center;
+  padding: 1rem 0;
+}
